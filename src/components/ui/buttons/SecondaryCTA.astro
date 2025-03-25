@@ -1,9 +1,10 @@
 ---
-const { title, url } = Astro.props
+const { title, url, ...rest } = Astro.props
 
 interface Props {
   title?: string
   url?: string
+  [key: string]: any  // 允许接收其他属性
 }
 
 const baseClasses = 'inline-flex items-center justify-center gap-x-2 rounded-lg px-4 py-3 text-center text-sm font-medium text-neutral-600 shadow-sm outline-none ring-zinc-500 focus-visible:ring transition duration-300'
@@ -19,6 +20,7 @@ const darkClasses = 'dark:border-neutral-700 dark:bg-zinc-700 dark:text-neutral-
 <a
     class={`${baseClasses} ${borderClasses} ${bgColorClasses} ${hoverClasses} ${disableClasses} ${fontSizeClasses} ${ringClasses} ${darkClasses}`}
     href={url}
+    {...rest}
 >
     {title}
 </a>
