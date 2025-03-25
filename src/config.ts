@@ -11,8 +11,9 @@ export const SITE: Site = {
 export const NavigationLinks: NavigationLink[] = [
     { name: '文章', url: '/posts' },
     { name: '服务', url: '/friends' },
-    { name: '体系课', url: '/friends' },
+    { name: '体系课', url: 'https://www.mashen-occlub-course.com/' },
     { name: '分类', url: '/categories' },
+    { name: '跨境导航站', url: 'https://www.aimashen.com/' },
     // { name: 'Timeline', url: '/timeline' },
     { name: '关于我', url: '/posts/about-godruoyi' },
 ]
