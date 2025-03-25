@@ -9,11 +9,12 @@ export const SITE: Site = {
 }
 
 export const NavigationLinks: NavigationLink[] = [
-    { name: 'Posts', url: '/posts' },
-    { name: 'Category', url: '/categories' },
-    { name: 'Timeline', url: '/timeline' },
-    { name: 'About', url: '/posts/about-godruoyi' },
-    { name: 'Friends', url: '/friends' },
+    { name: '文章', url: '/posts' },
+    { name: '服务', url: '/friends' },
+    { name: '体系课', url: '/friends' },
+    { name: '分类', url: '/categories' },
+    // { name: 'Timeline', url: '/timeline' },
+    { name: '关于我', url: '/posts/about-godruoyi' },
 ]
 
 export const FooterLinks = [
