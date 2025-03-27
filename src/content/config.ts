@@ -39,19 +39,20 @@ const categoryCollection = defineCollection({
 
 const friendsCollection = defineCollection({
     type: 'data',
-    schema: () => z.array(
+    schema: z.array(
         z.object({
-            title: z.string(),
             name: z.string(),
+            title: z.string(),
             description: z.string(),
             avatar: z.string(),
             avatarDark: z.string().optional(),
+            category: z.string(),
             social: z.object({
-                twitter: z.string().optional(),
                 blog: z.string().optional(),
+                twitter: z.string().optional(),
                 github: z.string().optional(),
-            }),
-        }),
+            }).optional(),
+        })
     ),
 })
 
