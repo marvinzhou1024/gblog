@@ -42,7 +42,7 @@ export const FooterLinks = [
             { name: 'RSS', url: '/rss.xml' },
             { name: 'Site Map', url: '/sitemap-index.xml' },
             { name: 'Twitter', url: '' },
-            { name: '关于我', url: '/posts/about-godruoyi' },
+            { name: '关于我', url: '/posts/about-me' },
 
         ],
     },
