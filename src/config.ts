@@ -10,9 +10,9 @@ export const SITE: Site = {
 
 export const NavigationLinks: NavigationLink[] = [
     { name: '文章', url: '/posts' },
+    { name: '分类', url: '/categories' },
     { name: '服务', url: '/friends' },
     { name: '体系课', url: 'https://www.mashen-occlub-course.com/' },
-    { name: '分类', url: '/categories' },
     { name: '跨境导航站', url: 'https://www.aimashen.com/' },
     // { name: 'Timeline', url: '/timeline' },
     { name: '关于我', url: '/posts/about-godruoyi' },
@@ -20,20 +20,30 @@ export const NavigationLinks: NavigationLink[] = [
 
 export const FooterLinks = [
     {
-        section: 'Blog',
+        section: '课程与工具',
         links: [
-            { name: 'Posts', url: '/posts' },
-            { name: 'Timeline', url: '/timeline' },
-            { name: 'Categories', url: '/categories' },
-            { name: 'About Me', url: '/posts/about-godruoyi' },
+            { name: '实操体系课', url: '/posts' },
+            { name: '跨境导航站', url: '/timeline' },
+            { name: '码神开源知识库', url: '/categories' },
         ],
     },
     {
-        section: 'Other',
+        section: '其它',
         links: [
             { name: 'RSS', url: '/rss.xml' },
             { name: 'Site Map', url: '/sitemap-index.xml' },
             { name: 'Twitter', url: '' },
+            { name: '关于我', url: '/posts/about-godruoyi' },
+
+        ],
+    },{
+        section: '其它',
+        links: [
+            { name: 'RSS', url: '/rss.xml' },
+            { name: 'Site Map', url: '/sitemap-index.xml' },
+            { name: 'Twitter', url: '' },
+            { name: '关于我', url: '/posts/about-godruoyi' },
+
         ],
     },
 ]
