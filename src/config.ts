@@ -15,33 +15,24 @@ export const NavigationLinks: NavigationLink[] = [
     { name: '体系课', url: 'https://www.mashen-occlub-course.com/' },
     { name: '跨境导航站', url: 'https://www.aimashen.com/' },
     // { name: 'Timeline', url: '/timeline' },
-    { name: '关于我', url: '/posts/about-godruoyi' },
+    { name: '关于我', url: '/posts/about-me' },
 ]
 
 export const FooterLinks = [
     {
-        section: '课程与工具',
+        section: '服务',
         links: [
-            { name: '实操体系课', url: '/posts' },
-            { name: '跨境导航站', url: '/timeline' },
-            { name: '码神开源知识库', url: '/categories' },
-        ],
-    },
-    {
-        section: '其它',
-        links: [
-            { name: 'RSS', url: '/rss.xml' },
-            { name: 'Site Map', url: '/sitemap-index.xml' },
-            { name: 'Twitter', url: '' },
-            { name: '关于我', url: '/posts/about-godruoyi' },
-
+            { name: '付费服务', url: '/service' },
+            { name: '实操体系课', url: 'https://www.mashen-occlub-course.com/' },
+            { name: '跨境导航站', url: 'https://www.aimashen.com/' },
+            { name: '码神开源知识库', url: 'https://mcneo0lysndy.feishu.cn/wiki/V6DrwjILxitBihklEMZcjgzgnpe' },
+            { name: '知识星球', url: 'https://t.zsxq.com/hgX7q' },
         ],
     },{
         section: '其它',
         links: [
             { name: 'RSS', url: '/rss.xml' },
             { name: 'Site Map', url: '/sitemap-index.xml' },
-            { name: 'Twitter', url: '' },
             { name: '关于我', url: '/posts/about-me' },
 
         ],
@@ -51,13 +42,13 @@ export const FooterLinks = [
 export const Settings = {
     GoogleAnalytics: {
         enable: false,
-        id: 'G-TKQ4L3ZDSF',
+        id: 'G-TK55Q4L3ZDSF',
     },
 
     // See https://github.com/umami-software/umami
     UmamiAnalytics: {
         enable: true,
-        dataWebsiteID: 'bf63658a-9418-4f39-a6a1-5a0cedb6e429',
+        dataWebsiteID: 'bf66663658a-9418-4f39-a6a1-5a0cedb6e429',
     },
 
     Comment: {
