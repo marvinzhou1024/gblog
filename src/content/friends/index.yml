@@ -1,31 +1,10 @@
 - avatar: 'https://yufan.me/logo.svg'
   social:
     twitter: 'amehochan'
-    blog: 'https://yufan.me/links'
-    github: 'syhily'
-  title: '诗与梦想的远方'
+    blog: '1'
+    github: 'test'
+  title: 'test'
   avatarDark: 'https://yufan.me/logo-dark.svg'
-  name: '雨帆'
-  category: "技术"
-  description: "A thoughtful guy living a simple life. Working for bread, studying for interests, and thinking for hope. Learned about just 8 programming languages for fun"
-
-- avatar: 'https://images.godruoyi.com/gblog/bird.png'
-  social:
-    twitter: 'sppan24'
-    github: 'sppan24'
-    blog: "https://www.sppan24.cn"
-  title: 'Pan Bird'
-  name: 'Sppan'
-  category: "技术"
-  description: 'A man and a Bird who knows everything'
-
-- avatar: 'https://avatars.githubusercontent.com/u/21162238?v=4'
-  social:
-    twitter: 'quentin_hsu'
-    blog: 'https://www.xqy404.com/'
-    github: 'QuentinHsu'
-  title: 'Web Developer'
-  name: 'Quentin Hau'
-  category: "技术"
-  description: "Life's tough, let's be romantic"
-
+  name: 'test'
+  category: "test"
+  description: "test"
