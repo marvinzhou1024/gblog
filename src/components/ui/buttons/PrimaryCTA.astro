@@ -1,13 +1,14 @@
 ---
 import Icon from '@components/ui/icons/icon.astro'
 
-const { title, url, noArrow } = Astro.props
-
 interface Props {
-  title?: string
-  url?: string
+  title: string
+  url: string
   noArrow?: boolean
+  'data-qr-trigger'?: boolean
 }
+
+const { title, url, noArrow, ...rest } = Astro.props
 
 const baseClasses = 'group inline-flex items-center justify-center gap-x-2 rounded-lg px-4 py-3 text-sm font-bold text-neutral-50 ring-zinc-500 transition duration-300 focus-visible:ring outline-none'
 const borderClasses = 'border border-transparent'
@@ -21,6 +22,7 @@ const ringClasses = 'dark:ring-zinc-200';
     class={`${baseClasses} ${borderClasses} ${bgColorClasses} ${disableClasses} ${fontSizeClasses} ${ringClasses}`}
     href={url}
     data-astro-prefetch
+    {...rest}
 >
   {title}
   {noArrow ? null : <Icon name="arrowRight" />}

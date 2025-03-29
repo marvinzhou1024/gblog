@@ -37,16 +37,18 @@ interface Props {
 
     // 添加点击事件监听
     document.addEventListener('DOMContentLoaded', () => {
-        const secondaryBtn = document.querySelector('[data-qr-trigger]');
+        // 获取所有带有 data-qr-trigger 属性的按钮
+        const triggerBtns = document.querySelectorAll('[data-qr-trigger]');
         const closeBtn = document.querySelector('[data-modal-close]');
         const modal = document.getElementById('qrModal');
 
-        if (secondaryBtn) {
-            secondaryBtn.addEventListener('click', (e) => {
+        // 为所有触发按钮添加点击事件
+        triggerBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
                 e.preventDefault();
                 toggleQRModal();
             });
-        }
+        });
 
         if (closeBtn) {
             closeBtn.addEventListener('click', toggleQRModal);
@@ -75,7 +77,7 @@ interface Props {
         )}
 
         <div class="mt-7 grid w-full gap-3 sm:inline-flex">
-            {primaryBtn && <PrimaryCTA title={primaryBtn} url={primaryBtnURL} />}
+            {primaryBtn && <PrimaryCTA title={primaryBtn} url="#" data-qr-trigger />}
             {secondaryBtn && <SecondaryCTA title={secondaryBtn} url="#" data-qr-trigger />}
         </div>
     </div>

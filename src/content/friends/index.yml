@@ -1,10 +1,21 @@
-- avatar: 'https://yufan.me/logo.svg'
-  social:
-    twitter: 'amehochan'
-    blog: '1'
-    github: 'test'
-  title: 'test'
-  avatarDark: 'https://yufan.me/logo-dark.svg'
-  name: 'test'
-  category: "test"
-  description: "test"
+- avatar: 'https://img.aimashen.com/%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85%20(2).png'
+  title: '示例'
+  subtitle: "示例副标题"
+  category: "1"
+  description: "示例描述"
+  link: "http://localhost:4321/posts"
+
+- avatar: 'https://img.aimashen.com/%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85%20(2).png'
+  title: '敬请期待'
+  subtitle: "敬请期待"
+  category: "2"
+  description: "敬请期待"
+  link: "http://localhost:4321/posts"
+
+
+- avatar: 'https://img.aimashen.com/%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85%20(2).png'
+  title: '敬请期待'
+  subtitle: "敬请期待"
+  category: "2"
+  description: "敬请期待"
+  link: "http://localhost:4321/posts"

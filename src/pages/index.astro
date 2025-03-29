@@ -20,20 +20,24 @@ const posts: CollectionEntry<'posts'>[] = (await getCollection('posts')).sort(
         primaryBtn="业务合作"
         primaryBtnURL="/posts"
         secondaryBtn="联系我"
-        secondaryBtnURL="业务合作"
+        secondaryBtnURL="联系我"
         src={blogHeroImg}
         alt="godruoyi's blog"
     />
 
     <FeaturesSection />
-
+    <div class="flex justify-center items-center px-4 py-4">
+        <a href="https://hostinger.com?REFERRALCODE=1CARLOS05" target="_blank" rel="noopener noreferrer" class="group relative rounded-xl overflow-hidden w-[800px] h-[300px] cursor-pointer">
+            <img class="w-full h-full transition-transform duration-500 ease-in-out object-contain rounded-xl hover:scale-105" src="https://img.aimashen.com/1111.png" alt="Image Description">
+        </a>
+    </div>
     <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full">
         <div class="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
             <h2 class="text-3xl font-bold text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight">
-                Latest Post
+                码神经验分享
             </h2>
             <p class="mt-1 text-pretty text-neutral-600 dark:text-neutral-400">
-                Always want to write something, but rarely actually do it
+                分销团队实操经验
             </p>
         </div>
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -47,7 +51,7 @@ const posts: CollectionEntry<'posts'>[] = (await getCollection('posts')).sort(
 
     <HeroSectionAlt
         title="还有哪里可以找到我"
-        subTitle=""
+        subTitle="视频号、小红书、YouTube、抖音、B站、小宇宙同步发布"
         url="1"
     />
 </BaseLayout>
