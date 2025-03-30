@@ -22,7 +22,7 @@ export const FooterLinks = [
     {
         section: '服务',
         links: [
-            { name: '付费服务', url: '/service' },
+            { name: '码神服务', url: '/friends' },
             { name: '实操体系课', url: 'https://www.mashen-occlub-course.com/' },
             { name: '跨境导航站', url: 'https://www.aimashen.com/' },
             { name: '码神开源知识库', url: 'https://mcneo0lysndy.feishu.cn/wiki/V6DrwjILxitBihklEMZcjgzgnpe' },

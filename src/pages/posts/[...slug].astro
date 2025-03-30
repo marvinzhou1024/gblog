@@ -24,6 +24,10 @@ const category: CollectionEntry<'categories'> = (await getCollection('categories
     c => c.slug === post.data.category,
 ).pop() as CollectionEntry<'categories'>
 
+const relatedPosts = (await getCollection('posts'))
+    .filter(p => p.data.category === category.slug && p.slug !== post.slug)
+    .slice(0, 5)
+
 const tags = post.data.tags ?? [category.slug]
 const URL = Astro.url.href
 const ogImage = post.data.ogImage
@@ -155,6 +159,53 @@ const ogImage = post.data.ogImage
                     </div>
                 )
             }
+
+                 <!-- 在线广告图片 -->
+                 <div class="absolute hidden 2xl:block right-[-250px] 2xl:right-[-260px] w-[240px] top-[400px]">
+                    <a 
+                        href="https://hostinger.com?REFERRALCODE=1CARLOS05" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="block hover:opacity-90 transition-opacity"
+                    >
+                        <img
+                            src="https://img.aimashen.com/111111111111111111.png"
+                            alt="Advertisement"
+                            class="w-full rounded-lg"
+                        />
+                    </a>
+                    <!-- 相关文章列表 -->
+                    <div class="mt-6">
+                        <h3 class="text-lg font-semibold mb-4 text-neutral-800 dark:text-neutral-200">相关文章</h3>
+                        <div class="space-y-4">
+                            {relatedPosts.map(relatedPost => (
+                                <a
+                                    href={`/posts/${relatedPost.slug}`}
+                                    class="group flex gap-3 items-start hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-lg p-2 transition-colors"
+                                >
+                                    <div class="w-16 h-16 flex-shrink-0 overflow-hidden rounded-md">
+                                        <Image
+                                            src={relatedPost.data.banner}
+                                            alt={relatedPost.data.title}
+                                            class="w-full h-full object-cover"
+                                            width={64}
+                                            height={64}
+                                            format="webp"
+                                        />
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-sm font-medium text-neutral-700 dark:text-neutral-300 group-hover:text-orange-500 line-clamp-2">
+                                            {relatedPost.data.title}
+                                        </p>
+                                        <p class="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                                            {formatDateTime(relatedPost.data.pubDate)}
+                                        </p>
+                                    </div>
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </div> 
         </div>
     </div>
     <style is:inline>

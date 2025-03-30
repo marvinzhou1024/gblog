@@ -17,7 +17,7 @@ const tabs = [
     },
     {
         id: '2',
-        title: '资源',
+        title: '在线资源',
         icon: {
             path: 'm3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z',
             polyline: '9 22 9 12 15 12 15 22'
@@ -26,7 +26,7 @@ const tabs = [
     },
     {
         id: '3',
-        title: 'SEO课程',
+        title: '课程服务',
         icon: {
             circle1: { cx: "12", cy: "12", r: "10" },
             circle2: { cx: "12", cy: "10", r: "3" },
@@ -36,18 +36,29 @@ const tabs = [
     },
     {
         id: '4',
-        title: '付费服务',
+        title: '咨询服务',
         icon: {
             circle1: { cx: "12", cy: "12", r: "10" },
             circle2: { cx: "12", cy: "10", r: "3" },
             path: 'M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662'
         },
         category: '4'
+    },
+    {
+        id: '5',
+        title: '建站服务',
+        icon: {
+            circle1: { cx: "12", cy: "12", r: "10" },
+            circle2: { cx: "12", cy: "10", r: "3" },
+            path: 'M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662'
+        },
+        category: '5'
     }
 ]
 
 // 获取并处理数据
 const allFriends = await getCollection('friends')
+console.log('all-----',allFriends[0])
 const friendsByCategory = {}
 
 // 初始化分类
@@ -135,9 +146,18 @@ if (allFriends.length > 0) {
                                     </p>
                                     <a 
                                         class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-blue-600 decoration-2 hover:text-blue-700 hover:underline focus:underline focus:outline-hidden focus:text-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-600 dark:focus:text-blue-600" 
-                                        href={friend.url || friend.link || '#'}
+                                        href={(() => {
+                                           
+                                            return friend.link || '#';
+                                        })()}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        onclick={() => {
+                                            console.log('Link clicked:', friend.link);
+                                            if (!friend.link) {
+                                                event.preventDefault();
+                                            }
+                                        }}
                                     >
                                         查看详情
                                         <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

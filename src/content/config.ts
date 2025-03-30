@@ -46,7 +46,7 @@ const friendsCollection = defineCollection({
             subtitle: z.string().optional(),
             category: z.string(),
             description: z.string(),
-            link: z.string().optional(),
+            link: z.string(),
         }),
     ),
 })
