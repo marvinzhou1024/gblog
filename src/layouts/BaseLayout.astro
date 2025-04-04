@@ -20,6 +20,13 @@ const normalizeTitle = !title ? SITE.title : `${title} | ${SITE.title}`
 
 <html lang={lang} class="scrollbar-hide lenis lenis-smooth scroll-pt-16">
     <head>
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KPG4MCG2');</script>
+    <!-- End Google Tag Manager -->
         <title>{normalizeTitle}</title>
         <BaseHead
             title={normalizeTitle}
@@ -83,5 +90,9 @@ const normalizeTitle = !title ? SITE.title : `${title} | ${SITE.title}`
             }
         </style>
     </body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPG4MCG2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </html>
 <script is:inline src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
