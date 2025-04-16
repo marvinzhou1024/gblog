@@ -1,15 +1,15 @@
-- avatar: 'https://img.aimashen.com/%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85%20(2).png'
+- avatar: 'https://img.aimashen.com/mashen/2025/04/ac0ee93818a99a4c9f23ad82f785eb70.png'
   title: '外贸业务合伙'
   subtitle: "用最少的付出获得最大的收益"
   category: "1"
   description: "适合外贸工厂、外贸公司、外贸soho，你专注于业务，我们专注于获客，做各自擅长的事情，合作共赢，利润最大化"
-  link: "http://localhost:4321/posts"
+  link: "https://brand.aimashen.com/posts/waimaohehuo/"
 
-- avatar: 'https://img.aimashen.com/%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85%20(2).png'
-  title: '敬请期待'
-  subtitle: "敬请期待"
+- avatar: 'https://img.aimashen.com/mashen/2025/04/ed2cbfa77bc40bcb25b012801c2824b7.png'
+  title: '多语言翻译工具'
+  subtitle: "高精度多语言翻译工具"
   category: "2"
-  description: "敬请期待"
+  description: "优于市面上大部分的翻译工具，用以接近母语的形式翻译目标语言（支持众多国家主流语言），更加的通俗易懂、其具备很强的逻辑性"
   link: "http://localhost:4321/posts"
 
 

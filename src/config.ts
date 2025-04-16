@@ -2,7 +2,7 @@ import type { NavigationLink, Site } from './types.ts'
 
 export const SITE: Site = {
     author: '码神',
-    url: 'http://brand.aimashen.com',
+    url: 'https://brand.aimashen.com',
     title: '码神跨境与增长',
     description: '我是码神，擅长GoogleSEO与跨境增长，助力多家外贸独立站实现从0到1增长，本身也从事B端跨境业务，技术流，实战派，组建了一支跨境实战家团队，成员来自于海内外一线实战家，致力于为跨境er和企业提供完整的战略、建站、SEO、营销增长实战服务，微信：zy467016899 | 外贸业务合伙|有实操、有结果的跨境实战体系课助力询盘自由|高质量交流社群',
     shortDescription: '',
