@@ -12,6 +12,7 @@ export const NavigationLinks: NavigationLink[] = [
     { name: '文章', url: '/posts' },
     { name: '分类', url: '/categories' },
     { name: '服务', url: '/friends' },
+    { name: '社群工具库', url: 'https://tools.aimashen.com/' },
     { name: '体系课', url: 'https://www.mashen-occlub-course.com/' },
     { name: '跨境导航站', url: 'https://www.aimashen.com/' },
     // { name: 'Timeline', url: '/timeline' },
@@ -34,6 +35,7 @@ export const FooterLinks = [
             { name: 'RSS', url: '/rss.xml' },
             { name: 'Site Map', url: '/sitemap-index.xml' },
             { name: '关于我', url: '/posts/about-me' },
+            { name: '社群工具库', url: 'https://tools.aimashen.com/' },
 
         ],
     },
