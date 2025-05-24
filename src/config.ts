@@ -13,7 +13,7 @@ export const NavigationLinks: NavigationLink[] = [
     { name: '分类', url: '/categories' },
     { name: '服务', url: '/friends' },
     { name: '社群工具库', url: 'https://tools.aimashen.com/' },
-    { name: '体系课', url: 'https://www.mashen-occlub-course.com/' },
+    { name: '知识星球', url: 'https://brand.aimashen.com/posts/zhishixingqiu/' },
     { name: '跨境导航站', url: 'https://www.aimashen.com/' },
     // { name: 'Timeline', url: '/timeline' },
     { name: '关于我', url: '/posts/about-me' },
@@ -27,7 +27,7 @@ export const FooterLinks = [
             { name: '实操体系课', url: 'https://www.mashen-occlub-course.com/' },
             { name: '跨境导航站', url: 'https://www.aimashen.com/' },
             { name: '码神开源知识库', url: 'https://mcneo0lysndy.feishu.cn/wiki/V6DrwjILxitBihklEMZcjgzgnpe' },
-            { name: '知识星球', url: 'https://t.zsxq.com/hgX7q' },
+            { name: '知识星球', url: 'https://brand.aimashen.com/posts/zhishixingqiu/' },
         ],
     },{
         section: '其它',
